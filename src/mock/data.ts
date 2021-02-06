@@ -27,7 +27,7 @@ export const aboutData = {
    Rexchanger, an early-stage startup, to build out a peer-to-peer outdoor gear rental platform.`,
   paragraphThree: `I'm passionate about entrepreneurship and have worn many hats at many different startups including a few of my own. I previously ran
    my own startup from the University of Utah's Lassonde Entrepreneurship Institute and I was the director of the High School Utah Entrepreneurship Challenge.`,
-  resume: null, // if no resume, the button will not show up
+  resume: '/resume.pdf', // if no resume, the button will not show up
 };
 
 export const experienceData = [
