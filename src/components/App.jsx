@@ -5,6 +5,8 @@ import Experience from './Experience/Experience';
 import Projects from './Projects/Projects';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
+import FinalNotes from './FinalNotes/FinalNotes';
+import Navbar from './Navbar/Navbar';
 
 import { PortfolioProvider } from '../context/context';
 
@@ -28,14 +30,18 @@ function App() {
   }, []);
 
   return (
-    <PortfolioProvider value={{ hero, about, projects, contact, footer, experiences }}>
-      <Hero />
-      <About />
-      <Experience />
-      <Projects />
-      <Contact />
-      <Footer />
-    </PortfolioProvider>
+    <>
+      <Navbar />
+      <PortfolioProvider value={{ hero, about, projects, contact, footer, experiences }}>
+        <Hero />
+        <About />
+        <Experience />
+        <Projects />
+        <FinalNotes />
+        <Contact />
+        <Footer />
+      </PortfolioProvider>
+    </>
   );
 }
 

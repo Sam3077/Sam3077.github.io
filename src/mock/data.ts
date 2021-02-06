@@ -56,6 +56,16 @@ export const experienceData = [
   },
   {
     id: nanoid(),
+    position: 'Teaching Assistant',
+    location: 'University of Utah',
+    info: `I am a Teaching Assistant for ECE 2210, Electrical Engineering for Non-Majors, and ECE 3700, Intro to Digital System Design.
+     In 2210, I am in charge of creating and leading labs and helping students learn the fundamentals of electrical engineering. Although 
+     the course is for non-majors, it is surprisingly rigorous and covers a wide range of topics.`,
+    info2: `In ECE 3700, I am the exam grader and I also assist with general course concepts. I often create videos for students to follow
+     for some more difficult processes that aren't covered in-dept in lectures. I also help students with whatever they may need in the course!`
+  },
+  {
+    id: nanoid(),
     img: 'streamroot.png',
     position: 'Web and Media Compatibility Intern',
     location: "Streamroot - Paris, France",

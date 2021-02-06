@@ -39,6 +39,7 @@
             width: 10%;
             border-radius: 5px;
             vertical-align: middle;
+            z-index: -2;
 
             @include respond(tab-port) {
                 display: none;
@@ -50,7 +51,7 @@
         .dot {
             position: absolute;
             top: 50%;
-            left: -55%;
+            left: 40%;
             height: 100px;
             width: 100px;
             background-color: $primary-color;

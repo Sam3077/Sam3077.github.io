@@ -27,7 +27,7 @@ const Projects = () => {
       <Container>
         <div className="project-wrapper">
           <Title title="Projects" />
-          <p>*Note that many of my school project are in private GitHub repos to prevent cheating. Feel free to reach out if you would like access!</p>
+          <p>*Note that some of my school project are in private GitHub repos to prevent cheating. Feel free to reach out if you would like access!</p>
           {projects.map((project) => {
             const { title, info, info2, url, repo, img, id, isPrivate } = project;
 

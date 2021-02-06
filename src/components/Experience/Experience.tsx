@@ -80,9 +80,8 @@ const Experience = () => {
                     sm={0}
                     md={0}
                 >   
-                    <span className="line">
-                        <span className="dot"><span className="inner-dot"></span></span>
-                    </span>
+                    <span className="line"></span>
+                    <span className="dot"><span className="inner-dot"></span></span>
                 </Col>
                 <Col lg={4} md={isLeft ? 0 : 4}>
                   {!isLeft && buildTimelineCard(isLeft, position, location, info, info2, img, url, start, end)}
