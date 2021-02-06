@@ -60,6 +60,18 @@
   }
 }
 
+.btn--lighten {
+  background-image: linear-gradient(135deg, $white-color 0%, $dark-blue-text 400%);
+  border-image: linear-gradient(135deg, $white-color 0%, $dark-blue-text 200%);
+  border-image-slice: 1;
+  &::after {
+    background-image: linear-gradient(135deg, $white-color 0%, $dark-blue-text 200%);
+  }
+  &:hover {
+    -webkit-text-fill-color: $primary-color;
+  }
+}
+
 /* Resume Style */
 .cta-btn--resume {
   color: $white-color;

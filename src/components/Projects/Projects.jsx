@@ -37,8 +37,8 @@ const Projects = () => {
                   <Fade
                     left={isDesktop}
                     bottom={isMobile}
-                    duration={1000}
-                    delay={500}
+                    duration={500}
+                    delay={250}
                     distance="30px"
                   >
                     <div className="project-wrapper__text">
@@ -53,7 +53,7 @@ const Projects = () => {
                       {url && <a
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="cta-btn cta-btn--hero"
+                        className="cta-btn cta-btn--hero btn--lighten"
                         href={url || '#!'}
                       >
                         See Live
@@ -63,7 +63,7 @@ const Projects = () => {
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="cta-btn text-color-main"
+                          className="cta-btn text-color-white"
                           href={repo}
                         >
                           {isPrivate ? "Private" : ""} Source Code
@@ -76,8 +76,8 @@ const Projects = () => {
                   <Fade
                     right={isDesktop}
                     bottom={isMobile}
-                    duration={1000}
-                    delay={1000}
+                    duration={500}
+                    delay={250}
                     distance="30px"
                   >
                     <div className="project-wrapper__image">
