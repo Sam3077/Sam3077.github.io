@@ -10,7 +10,14 @@ import Navbar from './Navbar/Navbar';
 
 import { PortfolioProvider } from '../context/context';
 
-import { heroData, aboutData, projectsData, contactData, footerData, experienceData } from '../mock/data';
+import {
+  heroData,
+  aboutData,
+  projectsData,
+  contactData,
+  footerData,
+  experienceData,
+} from '../mock/data';
 
 function App() {
   const [hero, setHero] = useState({});
@@ -23,7 +30,7 @@ function App() {
   useEffect(() => {
     setHero({ ...heroData });
     setAbout({ ...aboutData });
-    setExperience([ ...experienceData]);
+    setExperience([...experienceData]);
     setProjects([...projectsData]);
     setContact({ ...contactData });
     setFooter({ ...footerData });

@@ -27,7 +27,10 @@ const Projects = () => {
       <Container>
         <div className="project-wrapper">
           <Title title="Projects" />
-          <p>*Note that some of my school project are in private GitHub repos to prevent cheating. Feel free to reach out if you would like access!</p>
+          <p>
+            *Note that some of my school project are in private GitHub repos to prevent cheating.
+            Feel free to reach out if you would like access!
+          </p>
           {projects.map((project) => {
             const { title, info, info2, url, repo, img, id, isPrivate } = project;
 
@@ -50,15 +53,16 @@ const Projects = () => {
                         </p>
                         <p className="mb-4">{info2 || ''}</p>
                       </div>
-                      {url && <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn cta-btn--hero btn--lighten"
-                        href={url || '#!'}
-                      >
-                        See Live
-                      </a>
-                      }
+                      {url && (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn cta-btn--hero btn--lighten"
+                          href={url || '#!'}
+                        >
+                          See Live
+                        </a>
+                      )}
                       {repo && (
                         <a
                           target="_blank"
@@ -66,7 +70,7 @@ const Projects = () => {
                           className="cta-btn text-color-white"
                           href={repo}
                         >
-                          {isPrivate ? "Private" : ""} Source Code
+                          {isPrivate ? 'Private' : ''} Source Code
                         </a>
                       )}
                     </div>

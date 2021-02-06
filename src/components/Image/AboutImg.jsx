@@ -28,11 +28,7 @@ const AboutImg = ({ filename, alt }) => (
       if (!image) return null;
 
       const imageFixed = image.node.childImageSharp.fixed;
-      return <Img 
-        objectFit="cover" 
-        className="rounded shadow-lg" 
-        alt={alt} 
-        fixed={imageFixed} />;
+      return <Img objectFit="cover" className="rounded shadow-lg" alt={alt} fixed={imageFixed} />;
     }}
   />
 );
