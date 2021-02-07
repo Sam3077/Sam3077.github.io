@@ -55,7 +55,7 @@ const About = () => {
                     </p>
                     <p>
                         This idea involves developing the code and hardware to make cheap at-home USB DAQ devices.
-                        Ideally the device would be useable with consumer grade mico-controllers like a Raspberry Pi and would allow people to build their
+                        Ideally the device would be useable with consumer grade micro-controllers like a Raspberry Pi and would allow people to build their
                         own or by a cheap pre-fabbed board. 
                     </p>
                 </ListGroup.Item>

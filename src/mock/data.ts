@@ -4,7 +4,7 @@ import { nanoid } from 'nanoid';
 export const headData = {
   title: 'Sam Hirsch | Computer Engineer', // e.g: 'Name | Developer'
   lang: 'en', // e.g: en, es, fr, jp
-  description: 'Developer portfolio for Sam HIrsch', // e.g: Welcome to my website
+  description: 'Developer portfolio for Sam Hirsch', // e.g: Welcome to my website
 };
 
 // HERO DATA
@@ -18,7 +18,7 @@ export const heroData = {
 
 // ABOUT DATA
 export const aboutData = {
-  img: 'profile.jpg',
+  img: 'headshot.png',
   paragraphOne: `I am currently an undergraduate pursuing a Bachelor's Degree in Computer Engineering at the University of Utah
    where I am also a Research Assistant with the Compiler Technology to Optimize Performance (CTOP) group, and focus on developing methods
    to automatically optimize low-level software.`,
@@ -38,7 +38,7 @@ export const experienceData = [
     location: 'University of Utah',
     info: `I am researching methods to automatically tune C code with the Compiler Technology to Optimize Performance group (CTOP) and 
      Dr. Mary Hall, the director of the School of Computing. The project is in conjunction with work being done at Argonne National Labs.`,
-    info2: `I largely work with developer guided code optimizations for C kernal functions using architecture-oriented optimizations. Recently I
+    info2: `I largely work with developer guided code optimizations for C kernel functions using architecture-oriented optimizations. Recently I
      was able to ~15x speedup with an lu kernel function as detailed <a target="_blank" href="https://docs.google.com/document/d/1boxzzEzg6gh10RLhNm1Cqd3PR_llUGXxK3c_moExU5E/edit?usp=sharing">here.</a>`,
     start: 'May 2020',
     url: 'http://ctop.cs.utah.edu/ctop/'
@@ -62,7 +62,7 @@ export const experienceData = [
      In 2210, I am in charge of creating and leading labs and helping students learn the fundamentals of electrical engineering. Although 
      the course is for non-majors, it is surprisingly rigorous and covers a wide range of topics.`,
     info2: `In ECE 3700, I am the exam grader and I also assist with general course concepts. I often create videos for students to follow
-     for some more difficult processes that aren't covered in-dept in lectures. I also help students with whatever they may need in the course!`
+     for some more difficult processes that aren't covered in-depth in lectures. I also help students with whatever they may need in the course!`
   },
   {
     id: nanoid(),
@@ -102,7 +102,7 @@ export const projectsData = [
     info: `Designed a fully-functional digital computer with Verilog-HDL and an FPGA board. The CPU was based on the RISC
      processor and instruction set. Then my team and I wrote a Guitar Hero clone that runs on our CPU, in our custom assembly language, that
      live-transcribes music.`,
-    info2: `The full system interfaces with an Arduino running FFT to convert the AC music signal to digestable, DC signals as well as 
+    info2: `The full system interfaces with an Arduino running FFT to convert the AC music signal to useable, DC signals as well as 
      a Raspberry Pi that manges the Bluetooth communication with the controller.`,
     url: 'https://youtu.be/ORIMPqAItE8',
     repo: 'https://github.com/kieblade/3710-project', // if no repo, the button will not show up
