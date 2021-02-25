@@ -11,9 +11,9 @@ export const headData = {
 export const heroData = {
   title: "I'm",
   name: 'Sam Hirsch',
-  subtitle: "Computer Engineering student, Research Assistant, and Entrepreneur",
-  cta: "Learn more",
-  caption: "University of Utah, Salt Lake City UT"
+  subtitle: 'Computer Engineering student, Research Assistant, and Entrepreneur',
+  cta: 'Learn more',
+  caption: 'University of Utah, Salt Lake City UT',
 };
 
 // ABOUT DATA
@@ -41,18 +41,18 @@ export const experienceData = [
     info2: `I largely work with developer guided code optimizations for C kernel functions using architecture-oriented optimizations. Recently I
      was able to ~15x speedup with an lu kernel function as detailed <a target="_blank" href="https://docs.google.com/document/d/1boxzzEzg6gh10RLhNm1Cqd3PR_llUGXxK3c_moExU5E/edit?usp=sharing">here.</a>`,
     start: 'May 2020',
-    url: 'http://ctop.cs.utah.edu/ctop/'
+    url: 'http://ctop.cs.utah.edu/ctop/',
   },
   {
     id: nanoid(),
     img: 'rexchanger.jpg',
     position: 'Chief Technology Officer',
-    location: "Rexchanger - Salt Lake City, Utah",
+    location: 'Rexchanger - Salt Lake City, Utah',
     info: `I currently lead the full-stack development of Rexchanger's software, a peer-to-peer outdoor rental platform. I also prioritize 
      and plan the development road-map and manage all technical communication.`,
     info2: `The backed is written with Python and Django and is hosted with Docker on AWS. The mobile app is cross-platform and is written with Flutter and Dart.`,
-    url: "http://www.rexchanger.com",
-    start: "Aug. 2019"
+    url: 'http://www.rexchanger.com',
+    start: 'Aug. 2019',
   },
   {
     id: nanoid(),
@@ -62,22 +62,22 @@ export const experienceData = [
      In 2210, I am in charge of creating and leading labs and helping students learn the fundamentals of electrical engineering. Although 
      the course is for non-majors, it is surprisingly rigorous and covers a wide range of topics.`,
     info2: `In ECE 3700, I am the exam grader and I also assist with general course concepts. I often create videos for students to follow
-     for some more difficult processes that aren't covered in-depth in lectures. I also help students with whatever they may need in the course!`
+     for some more difficult processes that aren't covered in-depth in lectures. I also help students with whatever they may need in the course!`,
   },
   {
     id: nanoid(),
     img: 'streamroot.png',
     position: 'Web and Media Compatibility Intern',
-    location: "Streamroot - Paris, France",
+    location: 'Streamroot - Paris, France',
     info: `I moved to Paris for several months to work with Streamroot, a cutting-edge video streaming technology company. While there, I developed a new 
      system for running internal QA. I built an iOS app and integrated it with the deployment chain to ensure seamless QA of new SDK builds. I also built
      a companion webapp and CLI with bash and JavaScript to enable easy viewing of live logs from the SDK and the ability to push test configurations to several devices at once.`,
     info2: `This project was particularly difficult because Streamroot's technology is an SDK that has little to no visible affect on the user experience.
      Additionally, their tech relies on a swarm of users simultaneously accessing the same content so it was difficult to reliably test their software. I detailed
-     my project on the <a href="https://link.medium.com/JSUY3NqCM9" target="_blank">company blog.<a>`,
-    start: "Sept. 2019",
-    end: "Jan. 2020",
-    url: "https://streamroot.io/"
+     my project on the <a href="https://link.medium.com/JSUY3NqCM9" target="_blank">company blog.</a>`,
+    start: 'Sept. 2019',
+    end: 'Jan. 2020',
+    url: 'https://streamroot.io/',
   },
   {
     id: nanoid(),
@@ -87,10 +87,10 @@ export const experienceData = [
     info: `During my freshman year of college, I had the opportunity to do a summer internship with Lucid Software where I maintained and improved their Android app.
      I built their new process of photo uploading which was a major feature in the 2.0 app release. I also developed, tested, and compared new mobile
      rendering methods.`,
-    start: "May 2018",
-    end: "Aug. 2018",
-    url: "https://lucid.co/"
-  }
+    start: 'May 2018',
+    end: 'Aug. 2018',
+    url: 'https://lucid.co/',
+  },
 ];
 
 // PROJECTS DATA
@@ -128,7 +128,7 @@ export const projectsData = [
      rigorous benchmark.`,
     info2: '',
     repo: 'https://github.com/Sam3077/cs4400-malloc/blob/main/mm.c', // if no repo, the button will not show up
-    isPrivate: true
+    isPrivate: true,
   },
 ];
 
