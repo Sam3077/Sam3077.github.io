@@ -11,7 +11,7 @@ export const headData = {
 export const heroData = {
   title: "I'm",
   name: 'Sam Hirsch',
-  subtitle: 'Computer Engineering student, Research Assistant, and Entrepreneur',
+  subtitle: 'Computer Engineer, Researcher, and Entrepreneur',
   cta: 'Learn more',
   caption: 'University of Utah, Salt Lake City UT',
 };
@@ -19,12 +19,11 @@ export const heroData = {
 // ABOUT DATA
 export const aboutData = {
   img: 'headshot.png',
-  paragraphOne: `I am currently an undergraduate pursuing a Bachelor's Degree in Computer Engineering at the University of Utah
-   where I am also a Research Assistant with the Compiler Technology to Optimize Performance (CTOP) group, and focus on developing methods
-   to automatically optimize low-level software.`,
-  paragraphTwo: `I am interested in computer design, embedded systems, high-performance computing, and virtual reality technology.
-   I previously interned with Lucid Software in Utah and Streamroot, now a subsidiary of CenturyLink, in Paris, France. Currently, I am working with
-   Rexchanger, an early-stage startup, to build out a peer-to-peer outdoor gear rental platform.`,
+  paragraphOne: `I am currently an undergraduate completing a Bachelor's Degree in Computer Engineering at the University of Utah
+   where I am also a Research Assistant with the Center for Parallel Computing.`,
+  paragraphTwo: `I am interested in computer design, embedded systems, high-performance computing (HPC), and virtual reality technology.
+   I previously did research with Lawrence Berkeley National Laboratory on code for HPC GPU accelerators and I am currently synthesizing my 
+   results into a research paper.`,
   paragraphThree: `I'm passionate about entrepreneurship and have worn many hats at many different startups including a few of my own. I previously ran
    my own startup from the University of Utah's Lassonde Entrepreneurship Institute and I was the director of the High School Utah Entrepreneurship Challenge.`,
   resume: '/resume.pdf', // if no resume, the button will not show up
@@ -33,14 +32,41 @@ export const aboutData = {
 export const experienceData = [
   {
     id: nanoid(),
+    img: 'cpcu.jpg',
+    position: 'Undergraduate Research Assistant',
+    location: 'University of Utah',
+    start: 'Sept. 2021',
+    url: 'http://www.parallel.utah.edu/',
+    info: `I currently work with the Center for Parallel Computing to expand on my research done at Berkeley (see below). I wrote a framework to automatically
+      generate benchmarking code to test different kernels on different computers. This allows us to collect many results with minimal effort.`,
+    info2: `I am also working to synthesize my research and results into a final research paper. This paper will present the performance gains from
+      using our memory layout tool on different systems with different kernels. `,
+  },
+  {
+    id: nanoid(),
+    img: 'lbnl.jpg',
+    position: 'Summer Research Assistant',
+    location: 'Lawrence Berkeley National Laboratory',
+    start: 'May 2021',
+    end: 'Aug. 2021',
+    url: 'https://lbl.gov',
+    info: `I worked on an HPC developer tool that does a unique way to layout vectors in memory to optimize for large stencil-based operations and kernels.
+      This work was done as part of the <a target="_blank" href="https://www.exascaleproject.org/">Exascale Computing Project</a>, so I was able to work on
+      experimental supercomputer systems from AMD and Intel.`,
+    info2: `During my work, I interfaced directly with researchers at other national labs, AMD, Intel, and NVIDIA when I had architecture-specific questions and 
+      to share results between teams.`,
+  },
+  {
+    id: nanoid(),
     img: 'ctop.png',
     position: 'Undergraduate Research Assistant',
     location: 'University of Utah',
-    info: `I am researching methods to automatically tune C code with the Compiler Technology to Optimize Performance group (CTOP) and 
-     Dr. Mary Hall, the director of the School of Computing. The project is in conjunction with work being done at Argonne National Labs.`,
-    info2: `I largely work with developer guided code optimizations for C kernel functions using architecture-oriented optimizations. Recently I
-     was able to ~15x speedup with an lu kernel function as detailed <a target="_blank" href="https://docs.google.com/document/d/1boxzzEzg6gh10RLhNm1Cqd3PR_llUGXxK3c_moExU5E/edit?usp=sharing">here.</a>`,
+    info: `I performed research into methods of C code tuning with the Compiler Technology to Optimize Performance group (CTOP) and 
+     Dr. Mary Hall, the director of the School of Computing. The project was done in conjunction with work being done at Argonne National Labs.`,
+    info2: `I largely worked with developer guided code optimizations for C kernel functions using architecture-oriented optimizations. I
+     was ultimately able to achieve ~15x speedup with an lu kernel function as detailed <a target="_blank" href="https://docs.google.com/document/d/1boxzzEzg6gh10RLhNm1Cqd3PR_llUGXxK3c_moExU5E/edit?usp=sharing">here.</a>`,
     start: 'May 2020',
+    end: 'April 2021',
     url: 'http://ctop.cs.utah.edu/ctop/',
   },
   {
@@ -48,8 +74,8 @@ export const experienceData = [
     img: 'rexchanger.jpg',
     position: 'Chief Technology Officer',
     location: 'Rexchanger - Salt Lake City, Utah',
-    info: `I currently lead the full-stack development of Rexchanger's software, a peer-to-peer outdoor rental platform. I also prioritize 
-     and plan the development road-map and manage all technical communication.`,
+    info: `I lead the full-stack development of Rexchanger's software, a peer-to-peer outdoor rental platform. I also prioritized
+     and planned the development road-map and managed all technical communication.`,
     info2: `The backed is written with Python and Django and is hosted with Docker on AWS. The mobile app is cross-platform and is written with Flutter and Dart.`,
     url: 'http://www.rexchanger.com',
     start: 'Aug. 2019',
@@ -58,11 +84,12 @@ export const experienceData = [
     id: nanoid(),
     position: 'Teaching Assistant',
     location: 'University of Utah',
-    info: `I am a Teaching Assistant for ECE 2210, Electrical Engineering for Non-Majors, and ECE 3700, Intro to Digital System Design.
-     In 2210, I am in charge of creating and leading labs and helping students learn the fundamentals of electrical engineering. Although 
-     the course is for non-majors, it is surprisingly rigorous and covers a wide range of topics.`,
-    info2: `In ECE 3700, I am the exam grader and I also assist with general course concepts. I often create videos for students to follow
-     for some more difficult processes that aren't covered in-depth in lectures. I also help students with whatever they may need in the course!`,
+    info: `I was previously a Teaching Assistant for ECE 2210, Electrical Engineering for Non-Majors, and ECE 3700, Intro to Digital System Design.
+     In 2210, I was in charge of creating and leading labs and helping students learn the fundamentals of electrical engineering. Although 
+     the course is for non-majors, it is surprisingly rigorous and covers a wide range of topics. In ECE 3700, I was the exam grader and I also assisted with general course concepts. I often created videos for students to follow
+     for some more difficult processes that weren't covered in-depth in lectures. I also helped students with whatever they may need in the course!`,
+    info2: `I am currently a TA for ECE 3710, Computer Design Lab. I am the only TA for this course, so I wear a lot of different hats.
+      Since this is a project-based lab class I primarily help students with their questions and their design. This course focusses on CPU design with Verilog and covers a range of operations from ALU control, to memory mapping, to instruction management and processing.`,
   },
   {
     id: nanoid(),
@@ -95,6 +122,16 @@ export const experienceData = [
 
 // PROJECTS DATA
 export const projectsData = [
+  {
+    id: nanoid(),
+    img: 'mesh.jpg',
+    title: 'Peer-to-peer Autonomous Vehicle Communication',
+    info: `This is my undergraduate senior project at the University of Utah and it is currently undergoing development. Our ultimate goal is to
+      develop a method for real-time communication between vehicles and a strategy for making use of communicated information.`,
+    info2: `The first stage of this project was to implement a rudimentary form of autonomous driving. Our current model uses a mixture of computer vision,
+      LIDAR data, and real-time routing to achieve basic autonomy.`,
+    repo: 'https://github.com/MercuryMesh',
+  },
   {
     id: nanoid(),
     img: 'guitar_hero.jpg',
